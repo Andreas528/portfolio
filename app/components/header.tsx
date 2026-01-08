@@ -21,7 +21,7 @@ export default function Header() {
           - px / py give breathing room on all screen sizes
           - flex layout aligns left + right sections
         */}
-        <div className="mx-auto grid max-w-6xl grid-cols-3 items-center px-6 py-4 lg:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 items-center px-6 py-4 lg:px-8">
 
 
           {/* 
@@ -56,12 +56,6 @@ export default function Header() {
               Andreas Runge
             </span>
           </Link>
-        </div>
-        <div className="justify-self-center">
-          {/* Pokémon Route */}
-            <Link href="/pokemon" className="font-medium">
-                Pokémon
-              </Link>
         </div>
           {/* 
             RIGHT SIDE: Social links

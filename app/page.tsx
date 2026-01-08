@@ -15,6 +15,11 @@ export default function Home() {
           Software Engineering student.  
           I build things and experiment on the web.
         </p>
+
+        {/* Pokémon Route */}
+        <Link href="/pokemon" className="font-medium">
+            Pokémon
+          </Link>
       </div>
     </main>
   );
