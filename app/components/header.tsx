@@ -30,7 +30,7 @@ export default function Header() {
             - gap creates space between them
           */}
         <div className="justify-self-start">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/"  className="group flex items-center gap-3 rounded-md p-2 hover:bg-white/5 transition-colors">
             {/* 
               Logo image
               - small enough for a header
@@ -42,7 +42,7 @@ export default function Header() {
               alt="logo"
               width={48}
               height={48}
-              className="rounded-md"
+              className="rounded-md opacity-70 transition group-hover:opacity-100"
               priority
             />
 
@@ -52,7 +52,7 @@ export default function Header() {
               - font-medium gives enough weight without shouting
               - uses foreground color so it adapts to dark/light mode
             */}
-            <span className="text-sm font-medium text-[var(--foreground)]">
+            <span className="text-sm font-medium text-[var(--foreground)] opacity-70 transition group-hover:opacity-100">
               Andreas Runge
             </span>
           </Link>

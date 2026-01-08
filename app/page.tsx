@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.15]
           bg-gradient-to-r from-indigo-400 via-sky-300 to-emerald-300
           bg-clip-text text-transparent">
-          Andreas Runge
+          Andreas 
         </h1>
 
         <p className="mt-6 text-lg">
