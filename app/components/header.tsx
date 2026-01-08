@@ -21,13 +21,15 @@ export default function Header() {
           - px / py give breathing room on all screen sizes
           - flex layout aligns left + right sections
         */}
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-3 items-center px-6 py-4 lg:px-8">
+
 
           {/* 
             LEFT SIDE: Logo + name
             - flex aligns image and text horizontally
             - gap creates space between them
           */}
+        <div className="justify-self-start">
           <Link href="/" className="flex items-center gap-3">
             {/* 
               Logo image
@@ -54,18 +56,19 @@ export default function Header() {
               Andreas Runge
             </span>
           </Link>
-
+        </div>
+        <div className="justify-self-center">
           {/* Pokémon Route */}
-            <Link href="/pokemon" className="mx-auto items-center">
-                Nicolais
+            <Link href="/pokemon" className="font-medium">
+                Pokémon
               </Link>
-          
+        </div>
           {/* 
             RIGHT SIDE: Social links
             - flex groups icons into one action area
             - gap controls spacing between icons
           */}
-          <div className="flex items-center gap-2">
+          <div className="flex gap-2 justify-self-end">
 
             {/* 
               Each social link
